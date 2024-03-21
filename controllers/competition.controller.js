@@ -40,7 +40,6 @@ const createOneCompetition = async (req, res, next) => {
     image,
     days,
     dueDate
-    //    MIRAR SI NO CONCUERDA ALGO
   } = req.body;
   try {
     if (!title || !description || !status || !province || !city) {
