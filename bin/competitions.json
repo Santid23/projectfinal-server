@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "title": "ThunderBox",
         "description": "Competición de CrossFit en Talavera.",
         "status": "Se puede inscribir",
@@ -11,7 +10,6 @@
         "dueDate": "2024-10-18T12:00:00Z"
     },
     {
-        "id": 2,
         "title": "CrossFit Tempus",
         "description": "Competición de CrossFit en Toledo.",
         "status": "No se puede inscribir",
@@ -22,7 +20,6 @@
         "dueDate": "2024-02-10T12:00:00Z"
     },
     {
-        "id": 3,
         "title": "CrossFit CGT",
         "description": "Competición de CrossFit en Torrevieja.",
         "status": "Se puede inscribir",
@@ -33,7 +30,6 @@
         "dueDate": "2024-07-25T10:00:00Z"
     },
     {
-        "id": 4,
         "title": "KULTUR BOX",
         "description": "Competición de CrossFit en Ciudad Real.",
         "status": "Se puede inscribir",
