@@ -1,3 +1,5 @@
+// Revisar todo
+
 const User = require('../models/user.model');
 const { creaPass } = require('../utils/auth');
 const jwt = require('jsonwebtoken');
