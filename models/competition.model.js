@@ -21,11 +21,6 @@ const competitionSchema = new Schema (
             enum: ['Se puede inscribir','No se puede inscribir'],
             default: "Se puede inscribir",
         },
-        address: {
-            type: String,
-            unique: true,
-            trim: true
-        },
         province: {
             type: String,
             enum: ['Álava','Albacete','Alicante','Almería','Asturias','Ávila','Badajoz','Barcelona','Burgos','Cáceres',
@@ -46,17 +41,8 @@ const competitionSchema = new Schema (
             default: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Ffeelcrossfit.com%2Fllamalo-quieras-no-no-crossfit%2F&psig=AOvVaw3VN0L_vkskAgB6EXouqwv0&ust=1710260434017000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjPlN_O7IQDFQAAAAAdAAAAABAE'
         },
         days: {
-            Monday: {Boolean},
-            Tuesday: {Boolean},
-            Wednesday: {Boolean},
-            Thursday: {Boolean},
-            Friday: {Boolean},
-            Saturday: {Boolean},
-            Sunday: {Boolean},
-        },
-        createdAt: {
-            type: Date,
-            default: Date.now()
+            type: String,
+            required: true
         },
         dueDate: {
             type: Date

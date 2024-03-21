@@ -28,7 +28,7 @@ const signup = async (req, res, next) => {
 const login = async (req, res) => {
     res.json({
         // MIRAR LO DE ADMIN
-        token: jwt.sign({ user: req.user._id, role: 'Admin' }, process.env.SECRET_KEY, { expiresIn: '1d' }),
+        token: jwt.sign({ user: req.user._id, role: req.user.role }, process.env.PASSPORT_KEY, { expiresIn: '1d' }),
     });
 };
 

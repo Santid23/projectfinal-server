@@ -1,0 +1,42 @@
+[
+    {
+        "title": "ThunderBox",
+        "description": "Competición de CrossFit en Talavera.",
+        "status": "Se puede inscribir",
+        "province": "Toledo",
+        "city": "Talavera de la Reina",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffeelcrossfit.com%2Fllamalo-quieras-no-no-crossfit%2F&psig=AOvVaw3VN0L_vkskAgB6EXouqwv0&ust=1710260434017000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjPlN_O7IQDFQAAAAAdAAAAABAE",
+        "days": "Viernes, sabado y domingo",
+        "dueDate": "2024-10-18T12:00:00Z"
+    },
+    {
+        "title": "CrossFit Tempus",
+        "description": "Competición de CrossFit en Toledo.",
+        "status": "No se puede inscribir",
+        "province": "Toledo",
+        "city": "Toledo",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffeelcrossfit.com%2Fllamalo-quieras-no-no-crossfit%2F&psig=AOvVaw3VN0L_vkskAgB6EXouqwv0&ust=1710260434017000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjPlN_O7IQDFQAAAAAdAAAAABAE",
+        "days": "Sabado y domingo",
+        "dueDate": "2024-02-10T12:00:00Z"
+    },
+    {
+        "title": "CrossFit CGT",
+        "description": "Competición de CrossFit en Torrevieja.",
+        "status": "Se puede inscribir",
+        "province": "Alicante",
+        "city": "Torrevieja",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffeelcrossfit.com%2Fllamalo-quieras-no-no-crossfit%2F&psig=AOvVaw3VN0L_vkskAgB6EXouqwv0&ust=1710260434017000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjPlN_O7IQDFQAAAAAdAAAAABAE",
+        "days": "Viernes, sabado y domingo",
+        "dueDate": "2024-07-25T10:00:00Z"
+    },
+    {
+        "title": "KULTUR BOX",
+        "description": "Competición de CrossFit en Ciudad Real.",
+        "status": "Se puede inscribir",
+        "province": "Ciudad Real",
+        "city": "Ciudad Real",
+        "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ffeelcrossfit.com%2Fllamalo-quieras-no-no-crossfit%2F&psig=AOvVaw3VN0L_vkskAgB6EXouqwv0&ust=1710260434017000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCOjPlN_O7IQDFQAAAAAdAAAAABAE",
+        "days": "Sabado y domingo",
+        "dueDate": "2024-09-02T01:00:00Z"
+    }
+]

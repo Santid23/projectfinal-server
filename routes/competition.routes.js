@@ -1,13 +1,13 @@
 const router = require('express').Router();
 const {
-    listAllCompetition,
+    listAllCompetitions,
     getOneCompetition,
     createOneCompetition,
     editOneCompetition,
     deleteOneCompetition,
 } = require('../controllers/competition.controller');
 
-router.get('/list', listAllCompetition);
+router.get('/list', listAllCompetitions);
 router.get('/getOne/:competition_id', getOneCompetition);
 
 router.get('/create', createOneCompetition);

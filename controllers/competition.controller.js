@@ -35,21 +35,19 @@ const createOneCompetition = async (req, res, next) => {
     title,
     description,
     status,
-    address,
     province,
     city,
     image,
     days,
-    createdAt,
     dueDate
     //    MIRAR SI NO CONCUERDA ALGO
   } = req.body;
   try {
-    if (!title || !description || !status || !address || !province || !city) {
+    if (!title || !description || !status || !province || !city) {
       return res.status(400).json({ msg: 'Please fill in all fields!' });
     }
 
-    if (!image || !days || !createdAt || !dueDate) {
+    if (!image || !days || !dueDate) {
       return res.status(400).json({ msg: 'Please fill in all fields!' });
     }
 
@@ -57,12 +55,10 @@ const createOneCompetition = async (req, res, next) => {
       title,
       description,
       status,
-      address,
       province,
       city,
       image,
       days,
-      createdAt,
       dueDate
     });
 
@@ -79,16 +75,14 @@ const editOneCompetition = async (req, res, next) => {
       title,
       description,
       status,
-      address,
       province,
       city,
       image,
       days,
-      createdAt,
       dueDate
     } = req.body;
 
-    if (!title || !description || !status || !address || !province || !city) {
+    if (!title || !description || !status || !province || !city) {
       return res.status(400).json({ msg: 'Please fill in all fields!' });
     }
 
@@ -106,12 +100,10 @@ const editOneCompetition = async (req, res, next) => {
         title,
         description,
         status,
-        address,
         province,
         city,
         image,
         days,
-        createdAt,
         dueDate
       },
       { new: true }
