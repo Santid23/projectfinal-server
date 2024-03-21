@@ -1,7 +1,7 @@
 # Project - TryHard #
 
 ### Description ###
-This is a full-stack application that allows users to find and add warnings about the safest routes in cities.
+
 
 ### Installation ###
 1. Clone the repository
