@@ -1,7 +1,7 @@
 # Project - TryHard #
 
 ### Description ###
-
+This is a web application where you can sign up for any type of CrossFit competition and create your own with the necessary conditions.
 
 ### Installation ###
 1. Clone the repository
