@@ -7,7 +7,7 @@ const competition = require('./competitions.json');
 
     const MONGO_URI = 
     // FALTA PONER NOMBRE LOCALHOST
-        process.env.MONGODB_URI || "mongodb://localhost:3000/ ...";
+        process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/TryHard_APP";
 
     mongoose
         .connect(MONGO_URI)
