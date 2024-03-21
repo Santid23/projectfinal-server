@@ -5,7 +5,6 @@ const competitionSchema = new Schema (
         title:{
             type: String,
             required: [true,'Please provide a task title'],
-            unique: true,
             maxlength: 100,
             trim: true
         },
