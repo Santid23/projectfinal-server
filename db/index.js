@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const MONGO_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/actuo-bullying"
+const MONGO_URI = process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/TryHard_APP"
 
 mongoose.connect(MONGO_URI)
     .then((mongooseConnection) => {
