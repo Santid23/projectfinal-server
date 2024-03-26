@@ -10,7 +10,7 @@ const {
 router.get('/list', listAllCompetitions);
 router.get('/getOne/:competition_id', getOneCompetition);
 
-router.get('/create', createOneCompetition);
+router.post('/create', createOneCompetition);
 
 router.put('/edit/:competition_id', editOneCompetition);
 
