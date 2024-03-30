@@ -12,11 +12,9 @@ const signup = async (req, res, next) => {
         }
         const passwordCrypt = creaPass(req.body.password);
         const result = await User.create({
-            name: req.body.name,
+            username: req.body.name,
             email: req.body.email,
             password: passwordCrypt,
-            avatar: req.body.avatar || undefined,
-            role: req.body.role
 
         });
         res.json({ error: false, contendio: result });
@@ -27,8 +25,7 @@ const signup = async (req, res, next) => {
 
 const login = async (req, res) => {
     res.json({
-        // MIRAR LO DE ADMIN
-        token: jwt.sign({ user: req.user._id, role: req.user.role }, process.env.PASSPORT_KEY, { expiresIn: '1d' }),
+        token: jwt.sign({ user: req.user._id }, process.env.PASSPORT_KEY, { expiresIn: '1d' }),
     });
 };
 

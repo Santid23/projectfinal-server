@@ -2,13 +2,19 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
     {
+        username: {
+            type: String,
+            required: [true, 'Un nombre de usuario es necesario!'],
+            unique: true,
+            trim: true,
+          },
         email: {
             type: String,
             unique: true,
             minLength: 1,
             lowercase: true,
             match: [
-                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/, ,
+                /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/, 
                 'Este email no es válido.',
             ],
             required: [true, 'Indícanos un email del colegio.'],
@@ -18,24 +24,6 @@ const userSchema = new Schema(
             salt: { type: String, required: true },
             hash: { type: String, required: true }
         },
-        name: {
-            type: String,
-            require: [true, 'Por favor, tienes que añadir un nombre'],
-            trim: true,
-            minLength: 3,
-            maxLength: 20,
-        },
-        role: {
-            type: String,
-            enum: ['Admin', 'User'],
-            required: true
-        },
-        avatar: {
-            url: {
-                type: String,
-                default: ""
-            }
-        }
     },
     {
         timestamps: true,
