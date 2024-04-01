@@ -85,7 +85,7 @@ const editOneCompetition = async (req, res, next) => {
       return res.status(400).json({ msg: 'Please fill in all fields!' });
     }
 
-    if (!!image || !days || !dueDate) {
+    if (!image || !days || !dueDate) {
       return res.status(400).json({ msg: 'Please fill in all fields!' });
     }
 
