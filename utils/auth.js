@@ -9,7 +9,7 @@ const createPass = (password) => {
     salt: salt,
     hash: genHash,
   };
-};
+}; 
 
 const checkPass = (password, hash, salt) => {
   let hashVerify = crypto

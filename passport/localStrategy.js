@@ -23,7 +23,7 @@ passport.use(
       }
     }
   )
-);
+); 
 
 passport.use(
   'login',
