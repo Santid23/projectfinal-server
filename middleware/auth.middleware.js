@@ -1,9 +1,9 @@
-const userRoleMiddleware = (req, res, next) => {
+/* const userRoleMiddleware = (req, res, next) => {
     try {
-      if (!req.user) {
+      if (!req.email) {
         return res.sendStatus(401);
       }
-      if (req.user.role !== 'Admin', 'user') {
+      if (req.user.role !== 'Admin', 'User') {
         return res.sendStatus(403);
       }
       next();
@@ -12,4 +12,4 @@ const userRoleMiddleware = (req, res, next) => {
     }
   }
   
-  module.exports = userRoleMiddleware;
+  module.exports = userRoleMiddleware; */

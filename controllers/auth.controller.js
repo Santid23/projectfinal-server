@@ -1,7 +1,7 @@
 // Revisar todo
 
 const User = require('../models/user.model');
-const { creaPass } = require('../utils/auth');
+const { createPass } = require('../utils/auth');
 const jwt = require('jsonwebtoken');
 
 const signup = async (req, res, next) => {
@@ -10,7 +10,7 @@ const signup = async (req, res, next) => {
         if (user) {
             res.status(400).json({ error: true, contenido: 'Usuario ya registrado' });
         }
-        const passwordCrypt = creaPass(req.body.password);
+        const passwordCrypt = createPass(req.body.password);
         const result = await User.create({
             username: req.body.name,
             email: req.body.email,
@@ -25,7 +25,7 @@ const signup = async (req, res, next) => {
 
 const login = async (req, res) => {
     res.json({
-        token: jwt.sign({ user: req.user._id }, process.env.PASSPORT_KEY, { expiresIn: '1d' }),
+        token: jwt.sign({ user: req.user._id }, process.env.PASSPORT_SECRET, { expiresIn: '1d' }),
     });
 };
 
