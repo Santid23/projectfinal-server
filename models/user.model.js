@@ -2,7 +2,7 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
     {
-        username: {
+         username: {
             type: String,
             required: false,
             unique: true,
@@ -17,7 +17,7 @@ const userSchema = new Schema(
                 /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/, 
                 'Este email no es válido.',
             ],
-            required: [true, 'Indícanos un email del colegio.'],
+            required: [true, 'Indícanos un email de usuario.'],
             trim: true
         },
         password: {

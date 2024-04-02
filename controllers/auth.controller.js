@@ -12,7 +12,7 @@ const signup = async (req, res, next) => {
         }
         const passwordCrypt = createPass(req.body.password);
         const result = await User.create({
-            username: req.body.name,
+          username: req.body.username,
             email: req.body.email,
             password: passwordCrypt,
 
